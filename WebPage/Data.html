@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visulization Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #cdbebe;
+        }
+    
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+    
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 0.5rem;
+        }
+    
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+    
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    
+        nav li {
+            display: inline-block;
+            position: relative;
+        }
+    
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            width: 250px; /* Increase the width for more space */
+        }
+    
+        nav li:hover > ul {
+            display: block;
+        }
+    
+        nav ul ul li {
+            display: block;
+            width: 100%; /* Increase the width for more space */
+        }
+    
+        nav ul ul a {
+            padding: 0.5rem 1rem;
+        }
+        .object-container {
+            background-color: #f8f8f8; /* Set your desired background color */
+            padding: 20px;
+        }
+        main {
+            padding: 2rem;
+        }
+    
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <h1>Mobile phone Sales</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Data.html">Datasets</a></li> 
+            <li><a href="#">Visualization</a>
+                <ul>
+                    <li><a href="AvgCostVSBrand.html">Avg Cost VS Brand</a></li>
+                    <li><a href="AVGSalesOfBrands.html">Avg Sales of Brands</a></li>
+                    <li><a href="BatteryLife.html">BatteryLife</a></li>
+                    <li><a href="QuarterlySales.html">Quarterly Sales</a></li>
+                    <li><a href="BrandSales.html">Sales by Brand</a></li>
+                    <li><a href="CorrelationOfBatteryPower.html">Correlation Plot</a></li>
+                    <li><a href="DualSimSales.html"> Sales based on Dual Sim</a></li>
+                    <li><a href="SalesBasedOnPhoneMemory.html">Sales Based on Memory</a></li>
+                    <li><a href="URLAboutPhone.html">Sales based on phone Model</a></li>
+                    <li><a href="ModelCost.html">Model Cost</a></li>
+                </ul></li>
+            <li><a href="DataTransformation.html">Data Transformation</a></li>
+            </ul>
+    </nav>
+
+    <main>
+        <h2>Datasets  Used :</h2>
+        <div class="object-container">
+        <ul>We have used the following datasets for our analysis:
+            <li><b>Train.csv :</b><br>
+                Data type  -> Table<br>
+                Attributes -> battery_power, blue, clock_speed, dual_sim, fc, four_g, int_memory, m_dep, mobile_wt, n_cores, pc,px_height, px_width, ram, sc_h, sc_w, talk_time, three_g, touch_screen, wifi, price_range<br>
+                No.of Records  ->  2000</li>
+            <li><b>Mobilephone_prices (1).csv :</b><br>
+                Data type  -> Table<br>
+                Attributes -> Phone_brand, Phone_price_kz, Phone_category, Operating_System, Phone_name, Phone_color, Phone_memory, Battery_life_in_mAh, Y_Shopping_sales, Y_Caala_sales<br>
+                No.of Records  ->  85</li>
+            <li><b>smartphone_category.csv :</b><br>
+                Data type  -> Table<br>
+                Attributes -> Product Name, Product URL, Brand, Sale Price, Mrp, Discount Percentage, Number Of Ratings, Number Of Reviews, Upc, Star Rating, Ram<br>
+                No.of Records  ->  1513</li>
+            <li><b>Smartphone_Sales.csv : </b><br>
+                Data type  -> Table<br>
+                Attributes -> Brand, 2021 Q1,2021 Q2, 2021 Q3, 2021 Q4, 2022 Q1,2022 Q2, 2022 Q3, 2022 Q4, 2023 Q1<br>
+                No.of Records  ->  6</li>
+        </ul></div>
+    </main>
+
+    <footer>
+        <p>This page provides the data on Datasets used in this project</p>
+    </footer>
+</body>
+
+</html>
